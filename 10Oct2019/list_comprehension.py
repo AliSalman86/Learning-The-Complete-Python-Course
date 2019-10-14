@@ -40,14 +40,16 @@ print(f"multiply a_numbers list by b_numbers list give us {len(multiplied)} poss
 print("=========================================")
 
 # validating names to true is first letter is capital or small
+# lower(), will make all letters in a string in a list lower case.
+# title(), make every string in a list start with capital letter.
 
 friend = input("Enter your name: ")
 friends = ["Alex", "Alice", "Jaafar", "Jenna"]
 friends_lower = [name.lower() for name in friends]
-
+print(friend)
 print(friends_lower)
 
 if friend.lower() in friends_lower:
-    print(f"Hello {friend}")
+    print(f"Hello {friend.title()}")
 else:
-    print(f"Hi, nice to meet you {friend}")
+    print(f"Hi, nice to meet you {friend.title()}")

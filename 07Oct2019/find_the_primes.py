@@ -1,3 +1,5 @@
+# Erastothenes' sieve algorith to find primes, it's not the fatsest algorithm to do
+# so
 # prime numbers are numbers divided by itself and 1
 # list to store the primes
 primes = list()
