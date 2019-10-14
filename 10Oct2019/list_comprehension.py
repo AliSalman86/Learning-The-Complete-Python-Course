@@ -18,3 +18,36 @@ doubled_numbers_2 = [number * 2 for number in numbers_2]
 print(doubled_numbers_2)
 
 print("=========================================")
+# practice for comprehension
+names = ["Alex", "Alice", "Jaafar", "Jenna"]
+last_name = "Jordan"
+
+full_names = [f"{name} full name is {name} {last_name}." for name in names]
+
+print(full_names)
+
+print("=========================================")
+# multi lists comprehension
+
+a_numbers = [3, 4, 5, 6]
+b_numbers = [8, 5, 3, 1]
+
+multiplied = [a * b for a in a_numbers for b in b_numbers]
+
+print(multiplied)
+print(f"multiply a_numbers list by b_numbers list give us {len(multiplied)} possibility")
+
+print("=========================================")
+
+# validating names to true is first letter is capital or small
+
+friend = input("Enter your name: ")
+friends = ["Alex", "Alice", "Jaafar", "Jenna"]
+friends_lower = [name.lower() for name in friends]
+
+print(friends_lower)
+
+if friend.lower() in friends_lower:
+    print(f"Hello {friend}")
+else:
+    print(f"Hi, nice to meet you {friend}")
